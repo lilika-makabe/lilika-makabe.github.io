@@ -1,33 +1,14 @@
-Strata by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Lilika Makabe's Personal Website
 
+Personal academic portfolio website.
 
-A simple, minimalist template that actually began life as an unused redesign of my
-personal site. Includes a (configurable) parallax background effect, Poptrox-powered
-lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
+🔗 https://lilika-makabe.github.io
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## Acknowledgments
 
-(* = Not included)
+This website was built using the [Photography Portfolio Template](https://github.com/rockem/astro-photography-portfolio) by rockem as a foundation. Thank you for the beautiful design!
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+## Credits
 
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+- Template: [Photography Portfolio Template](https://astro.build/themes/details/photography-portfolio-template/) by rockem (MIT License)
+- Icons: [Font Awesome](https://fontawesome.io)
