@@ -1,20 +1,20 @@
 // カルーセル - 自動スライド + 手動操作
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.carousel-track');
-    const cards = document.querySelectorAll('.carousel .work-card');
+    const slides = document.querySelectorAll('.carousel .work-slide');
     const prevBtn = document.querySelector('.carousel-btn.prev');
     const nextBtn = document.querySelector('.carousel-btn.next');
     const dotsContainer = document.querySelector('.carousel-dots');
     
-    if (!track || cards.length === 0) return;
+    if (!track || slides.length === 0) return;
     
     let currentIndex = 0;
-    const totalCards = cards.length;
+    const totalSlides = slides.length;
     const autoPlayInterval = 4000; // 4秒ごとに切り替え
     let autoPlay;
     
     // ドットを生成
-    cards.forEach((_, i) => {
+    slides.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.classList.add('dot');
         if (i === 0) dot.classList.add('active');
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function goTo(index) {
         currentIndex = index;
-        if (currentIndex >= totalCards) currentIndex = 0;
-        if (currentIndex < 0) currentIndex = totalCards - 1;
+        if (currentIndex >= totalSlides) currentIndex = 0;
+        if (currentIndex < 0) currentIndex = totalSlides - 1;
         updateCarousel();
         resetAutoPlay();
     }
