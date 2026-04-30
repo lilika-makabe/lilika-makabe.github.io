@@ -1,6 +1,6 @@
 // 共通ナビゲーション - ここを変更すれば全ページに反映
 function createNav() {
-    const logoText = "Lili";
+    const logoText = "Lilika";
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     const navHTML = `
