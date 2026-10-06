@@ -316,6 +316,7 @@ nav .nav-links a:hover {
   text-align: right;
 }
 
+
 /* Publication groups on home */
 .pub-group {
   font-family: var(--font-body);
@@ -872,13 +873,13 @@ footer .copyright a {
     font-size: 2.25rem;
   }
 
-  .home .publication-item {
-    grid-template-columns: 1fr;
-  }
-
   .news-list li {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .home .publication-item {
+    grid-template-columns: 1fr;
   }
 
   .exp-list li {

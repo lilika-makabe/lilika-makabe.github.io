@@ -7,10 +7,8 @@ function createNav() {
     <div class="container">
         <a href="index.html" class="logo">${logoText}</a>
         <ul class="nav-links">
-            <li><a href="index.html#about" ${currentPage === 'index.html' ? 'class="active"' : ''}>About</a></li>
-            <li><a href="index.html#news">News</a></li>
-            <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html" ${currentPage === 'index.html' ? 'class="active"' : ''}>Home</a></li>
+            <li><a href="publications.html" ${currentPage === 'publications.html' ? 'class="active"' : ''}>Publications</a></li>
             <li><a href="cv.html" ${currentPage === 'cv.html' ? 'class="active"' : ''}>CV</a></li>
         </ul>
     </div>
