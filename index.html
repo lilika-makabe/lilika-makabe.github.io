@@ -13,52 +13,145 @@
 <nav></nav>
 <script src="assets/js/nav.js"></script>
 
-<!-- Hero -->
-<section class="hero">
-    <div class="hero-content">
-        <img src="images/avatar/meathome.png" alt="Lilika Makabe" class="avatar"/>
-        <h1>Lilika Makabe</h1>
-        <p class="subtitle">Computer Vision / 3D Reconstruction / Physics-based Vision</p>
-        <p class="hero-bio">
-            I received my Ph.D. in Information Science from the University of Osaka, Japan,
-            under the supervision of <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Prof. Yasuyuki Matsushita</a>.
-        </p>
-        <div class="hero-news">
-            <p>
-                From October 2026, I'm joining <a href="https://www.cs.columbia.edu/CAVE/">Prof. Shree Nayar's lab</a>
-                at Columbia University as a visiting scholar.
-            </p>
-            <p>
-                <strong>📣 I'm actively looking for researcher positions starting after my visit.</strong>
-                Feel free to <a href="contact.html">get in touch</a>!
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Featured Works -->
-<section id="works" class="works">
+<main class="home">
     <div class="container">
-        <h2>Featured Works</h2>
-        <div class="works-grid">
-            <a href="publications.html#iccv2025" class="work-item">
-                <img src="images/publications/iccv2025_thumb.png" alt="ICCV 2025"/>
-                <div class="work-info">
-                    <span class="work-title">Spectral Sensitivity Estimation with an Uncalibrated Diffraction Grating</span>
-                    <span class="work-venue">ICCV 2025</span>
+
+        <!-- Profile -->
+        <section id="about" class="home-section intro">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <h1>Lilika Makabe</h1>
+                    <p class="intro-subtitle">Computer Vision / 3D Reconstruction / Physics-based Vision</p>
+                    <ul class="intro-links">
+                        <li><a href="mailto:makabe.lilika.d3c@osaka-u.ac.jp"><span class="fas fa-envelope"></span> Email</a></li>
+                        <li><a href="cv.html"><span class="fas fa-file-alt"></span> CV</a></li>
+                        <li><a href="https://github.com/lilika-makabe"><span class="fab fa-github"></span> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/lilika-makabe-a0288515a"><span class="fab fa-linkedin"></span> LinkedIn</a></li>
+                    </ul>
                 </div>
-            </a>
-            <a href="publications.html#wacv2022" class="work-item">
-                <img src="images/publications/wacv2022_thumb.png" alt="WACV 2022"/>
-                <div class="work-info">
-                    <span class="work-title">Shape-coded ArUco: Fiducial marker for bridging 2D and 3D modalities</span>
-                    <span class="work-venue">WACV 2022</span>
+                <img src="images/avatar/meathome.png" alt="Lilika Makabe" class="intro-photo"/>
+            </div>
+            <p class="intro-bio">
+                I received my Ph.D. in Information Science from the University of Osaka, Japan,
+                under the supervision of <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Prof. Yasuyuki Matsushita</a>.
+            </p>
+            <div class="callout">
+                <p>
+                    From October 2026, I'm joining <a href="https://www.cs.columbia.edu/CAVE/">Prof. Shree Nayar's lab</a>
+                    at Columbia University as a visiting scholar.
+                </p>
+                <p>
+                    <strong>📣 I'm actively looking for researcher positions starting after my visit.</strong>
+                    Feel free to <a href="mailto:makabe.lilika.d3c@osaka-u.ac.jp">get in touch</a>!
+                </p>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section id="news" class="home-section">
+            <h2>News</h2>
+            <ul class="news-list">
+                <li><span class="news-date">Oct 2026</span><span>Joining <a href="https://www.cs.columbia.edu/CAVE/">Prof. Shree Nayar's lab</a> at Columbia University as a visiting scholar.</span></li>
+                <li><span class="news-date">Sep 2026</span><span>Received my Ph.D. from the University of Osaka. 🎓</span></li>
+                <li><span class="news-date">May 2026</span><span>Our paper <a href="#tpami2026">DP-SfM</a> is accepted to IEEE TPAMI.</span></li>
+                <li><span class="news-date">May 2026</span><span>Recognized as an Outstanding Reviewer at CVPR 2026.</span></li>            </ul>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="home-section">
+            <h2>Experience</h2>
+            <ul class="exp-list">
+                <li>
+                    <img src="images/logos/columbia.png" alt="Columbia University" class="exp-logo"/>
+                    <div class="exp-text"><strong>Columbia University</strong><span class="exp-role">Visiting Scholar · Host: <a href="https://www.cs.columbia.edu/~nayar/">Prof. Shree Nayar</a></span></div>
+                    <span class="exp-date">Oct. 2026 – Sep. 2027 (expected)</span>
+                </li>
+                <li>
+                    <img src="images/logos/microsoft.svg" alt="Microsoft" class="exp-logo"/>
+                    <div class="exp-text"><strong>Microsoft Research Asia</strong><span class="exp-role">Research Intern</span></div>
+                    <span class="exp-date">Jun. 2025 – Sep. 2026</span>
+                </li>
+                <li>
+                    <img src="images/logos/york.svg" alt="York University" class="exp-logo"/>
+                    <div class="exp-text"><strong>York University</strong><span class="exp-role">Visiting Research Trainee · Host: <a href="https://www.eecs.yorku.ca/~mbrown/">Prof. Michael S. Brown</a></span></div>
+                    <span class="exp-date">Jun. 2024 – Aug. 2024</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="home-section">
+            <h2>Publications</h2>
+
+            <h3 class="pub-group">Journal Papers</h3>
+
+            <div class="publication-item" id="tpami2026">
+                <a href="https://arxiv.org/abs/2605.01852">
+                    <img src="images/publications/tpami2026_thumb.png" alt="" class="thumb"/>
+                </a>
+                <div class="info">
+                    <h3>DP-SfM: Dual-Pixel Structure from Motion without Scale Ambiguity</h3>
+                    <p class="authors"><u>Lilika Makabe</u>, Kohei Ashida, Hiroaki Santo, Fumio Okura, and Yasuyuki Matsushita</p>
+                    <p class="venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026</p>
+                    <p class="links">
+                        <a href="https://github.com/lilika-makabe/dp-sfm-tpami">[project page]</a>
+                        <a href="https://arxiv.org/abs/2605.01852">[preprint (arXiv:2605.01852)]</a>
+                    </p>
                 </div>
-            </a>
-        </div>
-        <p class="view-all"><a href="publications.html">View all publications →</a></p>
+            </div>
+
+            <h3 class="pub-group">International Conference Papers</h3>
+
+            <div class="publication-item" id="iccv2025">
+                <a href="https://www.arxiv.org/abs/2508.00330">
+                    <img src="images/publications/iccv2025_thumb.png" alt="" class="thumb"/>
+                </a>
+                <div class="info">
+                    <h3>Spectral Sensitivity Estimation with an Uncalibrated Diffraction Grating</h3>
+                    <p class="authors"><u>Lilika Makabe</u>, Hiroaki Santo, Fumio Okura, Michael S. Brown, and Yasuyuki Matsushita</p>
+                    <p class="venue">Proceedings of IEEE International Conference on Computer Vision (ICCV), 2025</p>
+                    <p class="links">
+                        <a href="https://lilika-makabe.github.io/camera-sensitivity-estimation-with-grating-site/">[project page]</a>
+                        <a href="https://www.arxiv.org/abs/2508.00330">[paper (arXiv:2508.00330)]</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication-item" id="iccp2023">
+                <a href="https://arxiv.org/abs/2603.16404">
+                    <img src="images/publications/iccp2023_thumb.png" alt="" class="thumb"/>
+                </a>
+                <div class="info">
+                    <h3>Near-light Photometric Stereo with Symmetric Lights</h3>
+                    <p class="authors"><u>Lilika Makabe</u>, Hiroaki Santo, Fumio Okura, and Yasuyuki Matsushita</p>
+                    <p class="venue">Proceedings of IEEE International Conference on Computational Photography (ICCP), 2023</p>
+                    <p class="links">
+                        <a href="https://github.com/lilika-makabe/near-symps">[project page]</a>
+                        <a href="https://arxiv.org/abs/2603.16404">[paper (arXiv:2603.16404)]</a>
+                        <a href="https://drive.google.com/file/d/17PwXmgkpC_3exveSLr8Qh-AZMeaHcZNA/view?usp=sharing">[supp]</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication-item" id="wacv2022">
+                <a href="http://cvl.ist.osaka-u.ac.jp/wp-content/uploads/2021/10/0898.pdf">
+                    <img src="images/publications/wacv2022_thumb.png" alt="" class="thumb"/>
+                </a>
+                <div class="info">
+                    <h3>Shape-coded ArUco: Fiducial marker for bridging 2D and 3D modalities</h3>
+                    <p class="authors"><u>Lilika Makabe</u>, Hiroaki Santo, Fumio Okura, and Yasuyuki Matsushita</p>
+                    <p class="venue">Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2022</p>
+                    <p class="links">
+                        <a href="https://github.com/lilika-makabe/shape-coded-aruco">[project page]</a>
+                        <a href="http://cvl.ist.osaka-u.ac.jp/wp-content/uploads/2021/10/0898.pdf">[paper]</a>
+                        <a href="https://www.youtube.com/watch?v=DcHXfaLgFAs">[supp]</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </div>
-</section>
+</main>
 
 <!-- Footer -->
 <footer>

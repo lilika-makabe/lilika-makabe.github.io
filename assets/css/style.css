@@ -117,7 +117,6 @@ nav .logo {
   font-size: 2.5rem;
   font-weight: 400;
   border-bottom: none;
-  margin-left: -4.5rem;
 }
 
 nav .nav-links {
@@ -141,38 +140,196 @@ nav .nav-links a:hover {
   border-bottom-color: var(--text);
 }
 
-/* ========== Hero Section ========== */
-.hero {
-  min-height: 100vh;
-  display: flex;
+/* ========== Home (single page) ========== */
+.home {
+  padding-top: calc(70px + 3.5rem);
+}
+
+.home .container {
+  max-width: 860px;
+}
+
+.home-section {
+  padding: 0 0 3.5rem;
+  margin-bottom: 3.5rem;
+  scroll-margin-top: 90px;
+}
+
+.home-section:last-child {
+  margin-bottom: 0;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2.5rem;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 70px;
-}
-
-.hero-content {
-  max-width: 960px;
-  padding: 0 1.5rem;
-}
-
-.hero .avatar {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
   margin-bottom: 2rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.intro h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-subtitle {
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.intro-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
   margin-bottom: 1rem;
 }
 
-.hero .subtitle {
-  font-size: 1.1rem;
+.intro-links li {
+  margin: 0;
+}
+
+.intro-links a {
+  font-size: 0.95rem;
+}
+
+.intro-links .fas,
+.intro-links .fab {
   color: var(--muted);
-  font-weight: 300;
+  margin-right: 0.3rem;
+}
+
+.intro-address {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.intro-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro-bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.intro-bio a,
+.callout a,
+.news-list a,
+.exp-list a {
+  border-bottom-color: var(--border);
+}
+
+.intro-bio a:hover,
+.callout a:hover,
+.news-list a:hover,
+.exp-list a:hover {
+  border-bottom-color: var(--text);
+}
+
+.callout {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f6f5f2;
+}
+
+.callout p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* News */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding-top: 0.1rem;
+}
+
+/* Experience */
+.exp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-list li {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  column-gap: 1.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.exp-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Logos share one box size and are centered, so wide and compact marks read alike */
+.exp-logo {
+  width: 150px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.exp-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.45;
+}
+
+.exp-text strong {
+  font-size: 0.95rem;
+}
+
+.exp-role {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* Publication groups on home */
+.pub-group {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 1.5rem;
+}
+
+.home .publication-item {
+  grid-template-columns: 220px 1fr;
+  margin-bottom: 2.5rem;
 }
 
 /* ========== Sections ========== */
@@ -496,40 +653,6 @@ tbody tr:last-child td {
   margin-top: 0;
 }
 
-/* ========== Hero Bio / News ========== */
-.hero .hero-bio {
-  max-width: 700px;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin: 2rem auto 0;
-}
-
-.hero-bio a,
-.hero-news a {
-  border-bottom-color: var(--border);
-}
-
-.hero-bio a:hover,
-.hero-news a:hover {
-  border-bottom-color: var(--text);
-}
-
-.hero-news {
-  margin-top: 2rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: #f6f5f2;
-}
-
-.hero-news p {
-  margin-bottom: 0.5rem;
-}
-
-.hero-news p:last-child {
-  margin-bottom: 0;
-}
-
 /* ========== CV Section ========== */
 .cv-section {
   margin-bottom: 3rem;
@@ -576,6 +699,23 @@ tbody tr:last-child td {
 .cv-desc {
   font-size: 0.9rem;
   font-style: italic;
+}
+
+/* Logo column (Work Experience) */
+.with-logos .cv-item {
+  grid-template-columns: 170px 150px 1fr;
+  column-gap: 1.5rem;
+}
+
+.with-logos .cv-details {
+  grid-column: 3;
+}
+
+.cv-logo {
+  grid-column: 2;
+  width: 150px;
+  height: 44px;
+  object-fit: contain;
 }
 
 /* ========== Contact Page ========== */
@@ -717,13 +857,43 @@ footer .copyright a {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
 
-  .hero h1 {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .intro-photo {
+    width: 140px;
+    height: 140px;
+    order: -1;
+  }
+
+  .intro h1 {
     font-size: 2.25rem;
   }
 
-  .hero .avatar {
-    width: 120px;
-    height: 120px;
+  .home .publication-item {
+    grid-template-columns: 1fr;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .exp-list li {
+    grid-template-columns: 110px 1fr;
+    column-gap: 1rem;
+  }
+
+  .exp-logo {
+    width: 110px;
+    height: 36px;
+  }
+
+  .exp-date {
+    grid-column: 2;
+    text-align: left;
   }
 
   nav .nav-links {
@@ -773,6 +943,22 @@ footer .copyright a {
 
   .cv-date {
     font-size: 0.85rem;
+  }
+
+  .with-logos .cv-item {
+    grid-template-columns: 1fr;
+  }
+
+  .with-logos .cv-date,
+  .with-logos .cv-details,
+  .cv-logo {
+    grid-column: 1;
+  }
+
+  .cv-logo {
+    width: 150px;
+    height: 32px;
+    object-position: left center;
   }
 }
 
