@@ -152,7 +152,8 @@ nav .nav-links a:hover {
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 960px;
+  padding: 0 1.5rem;
 }
 
 .hero .avatar {
@@ -495,44 +496,38 @@ tbody tr:last-child td {
   margin-top: 0;
 }
 
-/* ========== About Layout ========== */
-.container-narrow {
+/* ========== Hero Bio / News ========== */
+.hero .hero-bio {
   max-width: 700px;
-}
-
-.about-page {
-  text-align: center;
-}
-
-.about-hero {
-  margin-bottom: 3rem;
-}
-
-.about-hero img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.about-body {
-  text-align: left;
-}
-
-.about-body h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.about-lead {
-  font-size: 1.15rem;
-  color: var(--text);
+  font-size: 1.05rem;
   line-height: 1.8;
+  margin: 2rem auto 0;
 }
 
-.about-cta {
+.hero-bio a,
+.hero-news a {
+  border-bottom-color: var(--border);
+}
+
+.hero-bio a:hover,
+.hero-news a:hover {
+  border-bottom-color: var(--text);
+}
+
+.hero-news {
   margin-top: 2rem;
-  text-align: center;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f6f5f2;
+}
+
+.hero-news p {
+  margin-bottom: 0.5rem;
+}
+
+.hero-news p:last-child {
+  margin-bottom: 0;
 }
 
 /* ========== CV Section ========== */

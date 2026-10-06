@@ -8,7 +8,6 @@ function createNav() {
         <a href="index.html" class="logo">${logoText}</a>
         <ul class="nav-links">
             <li><a href="index.html" ${currentPage === 'index.html' ? 'class="active"' : ''}>Home</a></li>
-            <li><a href="about.html" ${currentPage === 'about.html' ? 'class="active"' : ''}>About</a></li>
             <li><a href="publications.html" ${currentPage === 'publications.html' ? 'class="active"' : ''}>Publications</a></li>
             <li><a href="cv.html" ${currentPage === 'cv.html' ? 'class="active"' : ''}>CV</a></li>
             <li><a href="contact.html" ${currentPage === 'contact.html' ? 'class="active"' : ''}>Contact</a></li>
