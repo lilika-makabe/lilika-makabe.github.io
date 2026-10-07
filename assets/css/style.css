@@ -316,6 +316,29 @@ nav .nav-links a:hover {
   text-align: right;
 }
 
+/* Planned positions: faded, with a small label */
+.exp-list li.upcoming .exp-logo {
+  opacity: 0.45;
+}
+
+.exp-list li.upcoming .exp-text strong,
+.exp-list li.upcoming a {
+  color: var(--muted);
+}
+
+.exp-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 0.4rem;
+  margin-left: 0.35rem;
+  vertical-align: 0.1em;
+}
+
 
 /* Publication groups on home */
 .pub-group {
