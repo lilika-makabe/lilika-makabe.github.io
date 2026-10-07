@@ -316,13 +316,15 @@ nav .nav-links a:hover {
   text-align: right;
 }
 
-/* Planned positions: faded, with a small label */
-.exp-list li.upcoming .exp-logo {
+/* Planned positions (home Experience and CV): faded, with a small label */
+.exp-list li.upcoming .exp-logo,
+.cv-item.upcoming .cv-logo {
   opacity: 0.45;
 }
 
 .exp-list li.upcoming .exp-text strong,
-.exp-list li.upcoming a {
+.exp-list li.upcoming a,
+.cv-item.upcoming .cv-details strong {
   color: var(--muted);
 }
 
@@ -693,8 +695,8 @@ tbody tr:last-child td {
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 2rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -725,6 +727,19 @@ tbody tr:last-child td {
   font-style: italic;
 }
 
+/* Compact sections (Awards, Funding): no dividers, tight rows */
+.cv-compact .cv-item {
+  margin-bottom: 0.7rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  line-height: 1.5;
+}
+
+.cv-compact .cv-details strong,
+.cv-compact .cv-details p {
+  margin-bottom: 0;
+}
+
 /* Logo column (Work Experience) */
 .with-logos .cv-item {
   grid-template-columns: 170px 150px 1fr;
@@ -735,11 +750,33 @@ tbody tr:last-child td {
   grid-column: 3;
 }
 
+/* Logo sections keep dividers but use tighter rows */
+.with-logos .cv-item {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.with-logos .cv-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.with-logos .cv-details strong,
+.with-logos .cv-details p {
+  margin-bottom: 0.05rem;
+}
+
 .cv-logo {
   grid-column: 2;
   width: 150px;
   height: 44px;
   object-fit: contain;
+  align-self: center;
+}
+
+.logos-top .cv-logo {
+  align-self: start;
 }
 
 /* ========== Contact Page ========== */
