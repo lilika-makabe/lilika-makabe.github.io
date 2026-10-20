@@ -429,7 +429,7 @@ tbody tr:last-child td {
 }
 
 .publication-item > a::after {
-  content: 'View Paper';
+  content: 'Learn More';
   position: absolute;
   top: 50%;
   left: 50%;
