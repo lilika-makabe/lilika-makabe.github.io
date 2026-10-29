@@ -222,14 +222,16 @@ nav .nav-links a:hover {
 .intro-bio a,
 .callout a,
 .news-list a,
-.exp-list a {
+.exp-list a,
+.cv-desc a {
   border-bottom-color: var(--border);
 }
 
 .intro-bio a:hover,
 .callout a:hover,
 .news-list a:hover,
-.exp-list a:hover {
+.exp-list a:hover,
+.cv-desc a:hover {
   border-bottom-color: var(--text);
 }
 
